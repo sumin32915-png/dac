@@ -1,5 +1,9 @@
 {
-  "sources": ["src/design.v"],
-  "testbench": "sim/tb_design.v",
-  "simulation_top": "tb_design"
+  "sources": [
+    "src/ramp8.v",
+    "src/dac_parallel8.v",
+    "src/dac.v"
+  ],
+  "testbench": "sim/tb_dac.sv",
+  "simulation_top": "tb"
 }

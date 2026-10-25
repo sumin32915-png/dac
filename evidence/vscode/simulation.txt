@@ -1,0 +1,9 @@
+[1] PASS 로그
+RUN C:\msys64\mingw64\bin\vvp.EXE -N C:\Users\sumin\fpga\dac\build\sim\run-0fe11ca1243849689430f6973c3d42bc\sim.vvp
+VCD info: dumpfile wave.vcd opened for output.
+PASS DAC: 260 writes, wraparound, channel, data hold, reset
+C:\Users\sumin\fpga\dac\sim\tb_dac.sv:32: $finish called at 10436000 (1ps)
+
+시뮬레이션 실행 완료. 진리표·자기검사·파형으로 회로의 정답 여부를 확인하세요.
+WAVE C:\Users\sumin\fpga\dac\build\sim\wave.vcd
+ *  Terminal will be reused by tasks, press any key to close it. 
