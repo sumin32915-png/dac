@@ -7,3 +7,14 @@ C:\Users\sumin\fpga\dac\sim\tb_dac.sv:32: $finish called at 10436000 (1ps)
 시뮬레이션 실행 완료. 진리표·자기검사·파형으로 회로의 정답 여부를 확인하세요.
 WAVE C:\Users\sumin\fpga\dac\build\sim\wave.vcd
  *  Terminal will be reused by tasks, press any key to close it. 
+
+[2] FAIL 로그
+RUN C:\msys64\mingw64\bin\vvp.EXE -N C:\Users\sumin\fpga\dac\build\sim\run-39c086ab967846f5ad79d5b36f27e5e8\sim.vvp
+VCD info: dumpfile wave.vcd opened for output.
+FATAL: C:\Users\sumin\fpga\dac\sim\tb_dac.sv:34: timeout
+       Time: 100000000  Scope: tb
+
+ERROR: 종료 코드 1: C:\Users\sumin\fpga\dac\build\sim\run-39c086ab967846f5ad79d5b36f27e5e8\simulation.log
+
+ *  The terminal process "C:\Users\sumin\AppData\Local\Microsoft\WindowsApps\python.EXE 'tools/fpga_lab.py', 'simulate'" terminated with exitcode: 1. 
+ *  Terminal will be reused by tasks, press any key to close it. 
