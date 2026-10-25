@@ -12,7 +12,7 @@ module dac_parallel8(
     always @(posedge clk_50mhz) begin
         if(rst_p) begin we_n<=1; a_b<=0; data<=0; end
         else begin
-
+            we_n<=1;   
             if(update) begin data<=value; a_b<=channel; we_n<=0; end
         end
     end
