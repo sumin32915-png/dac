@@ -17,20 +17,21 @@ set_property PACKAGE_PIN M3 [get_ports {led_out[2]}]
 set_property PACKAGE_PIN M1 [get_ports {led_out[1]}]
 set_property PACKAGE_PIN N5 [get_ports {led_out[0]}]
 
-# DAC 핀: S75 핀표 미확인. 실험실에서 확인 후 ?? 자리에 넣고 # 삭제
-# (다른 학교 Spartan-6판 핀은 S75의 7세그먼트 핀과 겹쳐 사용하지 않음)
-# set_property PACKAGE_PIN ?? [get_ports dac_csn]
-# set_property PACKAGE_PIN ?? [get_ports dac_ldacn]
-# set_property PACKAGE_PIN ?? [get_ports dac_wen]
-# set_property PACKAGE_PIN ?? [get_ports dac_a_b]
-# set_property PACKAGE_PIN ?? [get_ports {dac_d[0]}]
-# set_property PACKAGE_PIN ?? [get_ports {dac_d[1]}]
-# set_property PACKAGE_PIN ?? [get_ports {dac_d[2]}]
-# set_property PACKAGE_PIN ?? [get_ports {dac_d[3]}]
-# set_property PACKAGE_PIN ?? [get_ports {dac_d[4]}]
-# set_property PACKAGE_PIN ?? [get_ports {dac_d[5]}]
-# set_property PACKAGE_PIN ?? [get_ports {dac_d[6]}]
-# set_property PACKAGE_PIN ?? [get_ports {dac_d[7]}]
+# DAC 제어선 (교재 DAC 핀 구성표)
+set_property PACKAGE_PIN E1 [get_ports dac_csn]
+set_property PACKAGE_PIN F4 [get_ports dac_ldacn]
+set_property PACKAGE_PIN G4 [get_ports dac_wen]
+set_property PACKAGE_PIN G2 [get_ports dac_a_b]
+
+# DAC 데이터 D0~D7 (D7이 MSB)
+set_property PACKAGE_PIN E3 [get_ports {dac_d[0]}]
+set_property PACKAGE_PIN E5 [get_ports {dac_d[1]}]
+set_property PACKAGE_PIN D2 [get_ports {dac_d[2]}]
+set_property PACKAGE_PIN D5 [get_ports {dac_d[3]}]
+set_property PACKAGE_PIN C2 [get_ports {dac_d[4]}]
+set_property PACKAGE_PIN C4 [get_ports {dac_d[5]}]
+set_property PACKAGE_PIN B1 [get_ports {dac_d[6]}]
+set_property PACKAGE_PIN B3 [get_ports {dac_d[7]}]
 
 set_property IOSTANDARD LVCMOS33 [get_ports *]
 set_false_path -from [get_ports {rst_p add_sel}]
